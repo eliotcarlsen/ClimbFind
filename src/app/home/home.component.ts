@@ -12,11 +12,12 @@ import { ClimbersService } from '../climbers.service';
 })
 export class HomeComponent implements OnInit {
   climbers: FirebaseListObservable<any[]>
+  currentRoute: string = this.router.url;
   constructor(private router: Router, private climbersService: ClimbersService) { }
   ngOnInit() {
     this.climbers = this.climbersService.getClimbers();
   }
-  goToProfilePage(clickedClimber: Climber){
-    // this.router.navigate(['climbers', clickedClimber.$key]);
+  goToProfilePage(clickedClimber){
+    this.router.navigate(['climbers', clickedClimber.$key]);
   }
 }

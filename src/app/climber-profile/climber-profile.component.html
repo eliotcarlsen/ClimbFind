@@ -1,4 +1,5 @@
 <div>
-  <h3>{{climberToDisplay.firstname}}</h3>
-
+  <h3>{{(climberToDisplay | async)?.firstname}}</h3>
+  <h4>{{(climberToDisplay | async)?.lastname}}</h4>
+  <p>{{(climberToDisplay | async)?.bio}}</p>
 </div>

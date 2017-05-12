@@ -15,7 +15,14 @@ export class ClimbersService {
     return this.climbers;
   }
   getClimberById(climberId){
-
+    return this.database.object('climbers/' + climberId);
   }
-
+  editClimber(updatedClimber){
+    var climberInFirebase = this.getClimberById(updatedClimber.$key);
+    climberInFirebase.update({firstname: updatedClimber.firstname, lastname: updatedClimber.lastname, residence: updatedClimber.residence, bio: updatedClimber.bio, experience: updatedClimber.experience, type: updatedClimber.type, crag: updatedClimber.crag});
+  }
+  deleteThisClimber(climber){
+    var climberInFirebase = this.getClimberById(climber.$key);
+    climberInFirebase.remove();
+  }
 }

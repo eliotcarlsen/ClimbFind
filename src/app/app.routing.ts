@@ -15,7 +15,7 @@ const appRoutes: Routes = [
     component: AboutComponent
   },
   {
-    path: 'climber/:id',
+    path: 'climbers/:id',
     component: ClimberProfileComponent
   },
   {

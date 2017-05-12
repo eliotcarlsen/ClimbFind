@@ -11,6 +11,7 @@ import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { ClimberProfileComponent } from './climber-profile/climber-profile.component';
+import { EditClimberComponent } from './edit-climber/edit-climber.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -25,7 +26,8 @@ export const firebaseConfig = {
     HomeComponent,
     AboutComponent,
     AdminComponent,
-    ClimberProfileComponent
+    ClimberProfileComponent,
+    EditClimberComponent
   ],
   imports: [
     BrowserModule,

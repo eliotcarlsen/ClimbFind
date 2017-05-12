@@ -1,0 +1,46 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Edit Climber Profile</h3>
+  </div>
+</div>
+  <div class="panel-body">
+    <div>
+      <label>Climber First Name:</label>
+      <br>
+      <input [(ngModel)]=selectedClimber.firstname>
+    </div>
+    <div>
+      <label>Climber Last Name:</label>
+      <br>
+      <input [(ngModel)]=selectedClimber.lastname>
+    </div>
+    <div>
+      <label>Climber Residence:</label>
+      <br>
+      <input [(ngModel)]=selectedClimber.residence>
+    </div>
+    <div>
+      <label>Climber Bio:</label>
+      <br>
+      <textarea [(ngModel)]=selectedClimber.bio></textarea>
+    </div>
+    <div>
+      <label>Climber Experience:</label>
+      <br>
+      <input [(ngModel)]=selectedClimber.experience>
+    </div>
+    <div>
+      <label>Climbing Style Preference:</label>
+      <br>
+      <input [(ngModel)]=selectedClimber.type>
+    </div>
+    <div>
+      <label>Climbing Crag Preference:</label>
+      <br>
+      <input [(ngModel)]=selectedClimber.crag>
+    </div>
+  </div>
+<button (click)="updateClimber(selectedClimber)">Update</button>
+<br>
+<br>
+<button (click)="deleteClimber(selectedClimber)">Delete</button>
