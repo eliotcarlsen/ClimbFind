@@ -17,8 +17,8 @@ img{
   float: right;
 }
 img#photo{
-  width: 25%;
-  float: left;
+  width: 50%;
+  float: right;
 }
 
 body {
