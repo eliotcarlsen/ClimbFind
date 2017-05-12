@@ -14,8 +14,8 @@ export class AdminComponent implements OnInit {
 
   ngOnInit() {
   }
-  submitClimber(firstname: string, lastname: string, residence: string, bio: string, experience: string, type: string, crag: string) {
-    var newClimber: Climber = new Climber(firstname, lastname, residence, bio, experience, type, crag);
+  submitClimber(firstname: string, lastname: string, residence: string, bio: string, experience: string, type: string, crag: string, contact: string, photo: string) {
+    var newClimber: Climber = new Climber(firstname, lastname, residence, bio, experience, type, crag, contact, photo);
     this.climbersService.saveClimber(newClimber);
   }
 }

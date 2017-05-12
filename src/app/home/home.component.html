@@ -1,26 +1,29 @@
-<h1 *ngIf="currentRoute === '/admin'">Search For Climbers!</h1>
-<div class = "row">
-  <div class = "col-md-12">
-    <div class="panel panel-default">
-      <div class="panel-body">
-        <label for="filterByType">Filter Climbers by Type:</label>
-        <select (change)="onTypeChange($event.target.value)">
-          <option value="allClimbers">All Climbers</option>
-          <option value="trad">Trad Climbers</option>
-          <option value="sport">Sport Climbers</option>
-          <option value="boulderer">Boulderers</option>
-        </select>
-      </div>
+<h1 *ngIf="currentRoute === '/'">Search For Climbers!</h1>
+<div class = "col-md-12">
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <label for="filterByType">Filter Climbers by Type:</label>
+      <select (change)="onTypeChange($event.target.value)">
+        <option value="allClimbers">All Climbers</option>
+        <option value="trad">Trad Climbers</option>
+        <option value="sport">Sport Climbers</option>
+        <option value="boulderer">Boulderers</option>
+      </select>
     </div>
   </div>
-<div *ngFor="let climber of climbers | async | filterType:filterByType" class="panel panel-default">
-  <div class="panel-body">
-    <h3 (click)="goToProfilePage(climber)"><em>{{climber.firstname}} {{climber.lastname}}</em></h3>
-    <h4>{{climber.experience}}</h4>
-    <h4>{{climber.type}}</h4>
-    <div *ngIf="currentRoute === '/admin'">
-      <app-edit-climber [selectedClimber]="climber"></app-edit-climber>
+    <div class="col-md-6" *ngFor="let climber of climbers | async | filterType:filterByType">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <h3 (click)="goToProfilePage(climber)"><strong>Name: {{climber.firstname}} {{climber.lastname}}</strong></h3>
+          <img src="{{climber.photo}}">
+          <h4>Level: <em>{{climber.experience}}</em></h4>
+          <h4>Lives: <em>{{climber.residence}}</em></h4>
+          <h4>Favorite discipline: <em>{{climber.type}}</em></h4>
+          <h4>Favorite locations: <em>{{climber.crag}}</em></h4>
+          <div *ngIf="currentRoute === '/admin'">
+            <app-edit-climber [selectedClimber]="climber"></app-edit-climber>
+          </div>
+        </div>
     </div>
   </div>
-</div>
 </div>

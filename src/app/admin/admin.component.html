@@ -39,8 +39,18 @@
       <br>
       <input #crag>
     </div>
+    <div>
+      <label>Contact Info:</label>
+      <br>
+      <input #contact>
+    </div>
+    <div>
+      <label>Photo:</label>
+      <br>
+      <input #photo>
+    </div>
   </div>
-  <button (click)="submitClimber(firstname.value, lastname.value, residence.value, bio.value, experience.value, type.value, crag.value); firstname.value=''; lastname.value=''; residence.value=''; bio.value=''; experience.value=''; type.value=''; crag.value='';">Add</button>
+  <button (click)="submitClimber(firstname.value, lastname.value, residence.value, bio.value, experience.value, type.value, crag.value, contact.value, photo.value); firstname.value=''; lastname.value=''; residence.value=''; bio.value=''; experience.value=''; type.value=''; crag.value=''; contact.value=''; photo.value='';">Add</button>
   <br>
   <br>
 <div class="panel panel-default">

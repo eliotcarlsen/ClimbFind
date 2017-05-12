@@ -1,11 +1,13 @@
 { "climbers": [{
-    "firstname": "Steve",
-    "lastname": "Hill",
+    "firstname": "Daila",
+    "lastname": "Ojeda",
     "residence": "Seattle",
     "bio": "I love climbing.",
     "experience": "beginner",
     "type": "trad",
-    "crag": "Index"
+    "crag": "Index",
+    "contact": "steve@gmail.com",
+    "photo": "https://i.ytimg.com/vi/8J_bB1vI0uE/maxresdefault.jpg"
   }, {
     "firstname": "Si",
     "lastname": "Moore",
@@ -13,7 +15,9 @@
     "bio": "I've climbed all over the world.",
     "experience": "expert",
     "type": "trad, boulder, sport",
-    "crag": "Yosemite"
+    "crag": "Yosemite",
+    "contact": "Si@gmail.com",
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNTGLEq80-Sa3ulOOke4NkEseN1XMD4STLBfi5rMYlHAwK9wDO"
   }, {
     "firstname": "Eliot",
     "lastname": "Carlsen",
@@ -21,7 +25,9 @@
     "bio": "All types of climbing",
     "experience": "advanced",
     "type": "trad, boulder, sport",
-    "crag": "Yosemite, Index, Squamish, Spain"
+    "crag": "Yosemite, Index, Squamish, Spain",
+    "contact": "Eliot@gmail.com",
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ48m6Ecw_fWYodY9jkRXfhBI6HjtU4EZEN_tBfl2pbrOrKgpVY"
   }, {
     "firstname": "Samea",
     "lastname": "Teller",
@@ -29,7 +35,9 @@
     "bio": "Great excercise.",
     "experience": "intermediate",
     "type": "boulder, sport",
-    "crag": "Leavenworth, Yosemite, Bishop"
+    "crag": "Leavenworth, Yosemite, Bishop",
+    "contact": "Samea@gmail.com",
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq9Mq9YUiq92qHPJigwu7S0isZJNsJn-ywwzVk5uRSeXylEZTe"
   }, {
     "firstname": "Jackie",
     "lastname": "Moore",
@@ -37,7 +45,9 @@
     "bio": "I love climbing.",
     "experience": "advanced",
     "type": "sport, boulder",
-    "crag": "Yosemite, Bishop"
+    "crag": "Yosemite, Bishop",
+    "contact": "Jackie@gmail.com",
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS78jW_UmzZM-UrYYXOLwv9psJ4xW3Shud5e0uSYrBllwgWOsT7"
     }]
 
 }

@@ -1,5 +1,12 @@
-<div>
-  <h3>{{(climberToDisplay | async)?.firstname}}</h3>
-  <h4>{{(climberToDisplay | async)?.lastname}}</h4>
-  <p>{{(climberToDisplay | async)?.bio}}</p>
+<div class="row">
+  <div class="col-md-12">
+    <h3><strong>Name: {{(climberToDisplay | async)?.firstname}} {{(climberToDisplay | async)?.lastname}}</strong></h3>
+    <h4>Level: <em>{{(climberToDisplay | async)?.experience}}</em></h4>
+    <h4>Bio: <em>{{(climberToDisplay | async)?.bio}}</em></h4>
+    <h4>Lives: <em>{{(climberToDisplay | async)?.residence}}</em></h4>
+    <h4>Favorite discipline: <em>{{(climberToDisplay | async)?.type}}</em></h4>
+    <h4>Favorite locations: <em>{{(climberToDisplay | async)?.crag}}</em></h4>
+    <h4>Contact Info: <em>{{(climberToDisplay | async)?.contact}}</em></h4>
+    <img id="photo" src="{{(climberToDisplay | async)?.photo}}">
+  </div>
 </div>

@@ -12,3 +12,16 @@ nav#navbar {
   position: fixed;
   width: 100%;
 }
+img{
+  width: 50%;
+  float: right;
+}
+img#photo{
+  width: 25%;
+  float: left;
+}
+
+body {
+  background-image: url("http://www.backpaco.com/wp-content/uploads/2015/04/yosemite-park.jpg");
+  background-blend-mode: luminosity;
+}
