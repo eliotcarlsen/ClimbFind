@@ -1,0 +1,43 @@
+{ "climbers": [{
+    "firstname": "Steve",
+    "lastname": "Hill",
+    "residence": "Seattle",
+    "bio": "I love climbing.",
+    "experience": "beginner",
+    "type": "trad",
+    "crag": "Index"
+  }, {
+    "firstname": "Si",
+    "lastname": "Moore",
+    "residence": "San Francisco",
+    "bio": "I've climbed all over the world.",
+    "experience": "expert",
+    "type": "trad, boulder, sport",
+    "crag": "Yosemite"
+  }, {
+    "firstname": "Eliot",
+    "lastname": "Carlsen",
+    "residence": "Seattle",
+    "bio": "All types of climbing",
+    "experience": "advanced",
+    "type": "trad, boulder, sport",
+    "crag": "Yosemite, Index, Squamish, Spain"
+  }, {
+    "firstname": "Samea",
+    "lastname": "Teller",
+    "residence": "Seattle",
+    "bio": "Great excercise.",
+    "experience": "intermediate",
+    "type": "boulder, sport",
+    "crag": "Leavenworth, Yosemite, Bishop"
+  }, {
+    "firstname": "Jackie",
+    "lastname": "Moore",
+    "residence": "San Francisco",
+    "bio": "I love climbing.",
+    "experience": "advanced",
+    "type": "sport, boulder",
+    "crag": "Yosemite, Bishop"
+    }]
+
+}
