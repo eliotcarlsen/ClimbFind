@@ -1,3 +1,44 @@
-<p>
-  admin works!
-</p>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add a New Climber Profile</h3>
+  </div>
+</div>
+  <div class="panel-body">
+    <div>
+      <label>Climber First Name:</label>
+      <br>
+      <input #firstname>
+    </div>
+    <div>
+      <label>Climber Last Name:</label>
+      <br>
+      <input #lastname>
+    </div>
+    <div>
+      <label>Climber Residence:</label>
+      <br>
+      <input #residence>
+    </div>
+    <div>
+      <label>Climber Bio:</label>
+      <br>
+      <textarea #bio></textarea>
+    </div>
+    <div>
+      <label>Climber Experience:</label>
+      <br>
+      <input #experience>
+    </div>
+    <div>
+      <label>Climbing Style Preference:</label>
+      <br>
+      <input #type>
+    </div>
+    <div>
+      <label>Climbing Crag Preference:</label>
+      <br>
+      <input #crag>
+    </div>
+  </div>
+  <button (click)="submitClimber(firstname.value, lastname.value, residence.value, bio.value, experience.value, type.value, crag.value); firstname.value=''; lastname.value=''; residence.value=''; bio.value=''; experience.value=''; type.value=''; crag.value='';">Add</button>

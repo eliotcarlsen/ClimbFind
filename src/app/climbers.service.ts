@@ -8,8 +8,14 @@ export class ClimbersService {
   constructor(private database: AngularFireDatabase) {
     this.climbers = database.list('climbers');
   }
+  saveClimber(newClimber: Climber){
+    this.climbers.push(newClimber);
+  }
   getClimbers(){
     return this.climbers;
+  }
+  getClimberById(climberId){
+
   }
 
 }
